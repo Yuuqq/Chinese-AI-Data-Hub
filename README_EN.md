@@ -9,6 +9,14 @@
 
 ---
 
+## 🔍 Quick Dataset Lookup
+
+Need a fast overview of all available datasets?
+
+→ **[DATASETS.md](DATASETS.md)** — Comprehensive overview table grouped by AI workflow categories (searchable with Ctrl+F).
+
+---
+
 ## 🎯 Who is this Data Hub for?
 
 - **LLM Developers**: Looking for pretraining corpora, SFT/instruction data, and preference data
@@ -65,15 +73,18 @@ We organize datasets according to the modern AI development pipeline:
 CLUEDatasetSearch/
 ├── README.md
 ├── README_EN.md
+├── DATASETS.md                 # Quick overview table
 ├── CONTRIBUTING.md
 ├── data/
 │   ├── pretraining/
 │   ├── instruction/
 │   ├── preference/
+│   ├── long_context/
 │   ├── evaluation/
+│   ├── tasks/
 │   └── domain/
 ├── scripts/
-└── .github/ISSUE_TEMPLATE/
+└── .github/
 ```
 
 ---
@@ -81,8 +92,8 @@ CLUEDatasetSearch/
 ## ✨ Featured Recommendations
 
 - **Pretraining**: `pleisto/wikipedia-cn-20230720-filtered` (High-quality Chinese Wikipedia)
-- **Instruction Data**: Belle / WizardLM Chinese enhanced versions (continuously updated)
-- **Evaluation**: SuperCLUE series, classic CLUE tasks
+- **Instruction Data**: Belle / WizardLM / Magpie Chinese versions
+- **Evaluation**: SuperCLUE series, C-Eval
 
 More high-quality datasets are being added rapidly.
 
@@ -95,8 +106,6 @@ Recommended sources (in order of preference):
 1. **Hugging Face Datasets** (Strongly Recommended)
 2. **ModelScope** (Often faster in China)
 3. Original sources
-
-Most dataset entries include `hf_dataset_id` in their JSON metadata.
 
 ---
 

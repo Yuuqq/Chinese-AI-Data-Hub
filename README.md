@@ -9,6 +9,14 @@
 
 ---
 
+## 🔍 快速查找数据集
+
+需要快速浏览所有数据集？
+
+→ **[DATASETS.md](DATASETS.md)** — 数据集快速总览表（按 AI 工作流分类，支持关键词搜索）
+
+---
+
 ## 🎯 这个 Data Hub 适合谁？
 
 - **大模型开发者**：寻找预训练语料、SFT/指令数据、偏好数据
@@ -65,15 +73,18 @@ cd CLUEDatasetSearch
 CLUEDatasetSearch/
 ├── README.md
 ├── README_EN.md
+├── DATASETS.md                 # 数据集快速总览表
 ├── CONTRIBUTING.md
 ├── data/
 │   ├── pretraining/
 │   ├── instruction/
 │   ├── preference/
+│   ├── long_context/
 │   ├── evaluation/
+│   ├── tasks/
 │   └── domain/
 ├── scripts/
-└── .github/ISSUE_TEMPLATE/
+└── .github/
 ```
 
 ---
@@ -81,8 +92,8 @@ CLUEDatasetSearch/
 ## ✨ 精选推荐
 
 - **预训练**：`pleisto/wikipedia-cn-20230720-filtered`（高质量中文维基百科）
-- **指令数据**：Belle / WizardLM 中文增强版（持续补充）
-- **评测**：SuperCLUE 系列、CLUE 经典任务
+- **指令数据**：Belle / WizardLM / Magpie 中文版（持续补充）
+- **评测**：SuperCLUE 系列、C-Eval
 
 更多数据集正在快速补充中。
 
