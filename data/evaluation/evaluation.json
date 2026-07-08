@@ -24,5 +24,31 @@
     "last_verified": "2026-07-08",
     "status": "active",
     "remarks": "Latest SuperCLUE benchmark"
+  },
+  {
+    "id": "c-eval-2024",
+    "title": "C-Eval Chinese Evaluation Benchmark",
+    "update_date": "2024",
+    "provider": "C-Eval Team",
+    "license": "",
+    "description": "Comprehensive Chinese evaluation benchmark covering many subjects and abilities.",
+    "keywords": ["evaluation", "chinese", "benchmark"],
+    "category": "evaluation",
+    "paper_url": "https://arxiv.org/abs/2305.08322",
+    "hf_dataset_id": "ceval/ceval-exam",
+    "download_url": "https://huggingface.co/datasets/ceval/ceval-exam",
+    "size": "Multiple subjects",
+    "num_examples": null,
+    "language": "Chinese",
+    "tasks": ["evaluation", "knowledge"],
+    "recommended_for": ["evaluation", "chinese-llm"],
+    "quality_signals": {
+      "license_clear": true,
+      "human_annotated": true,
+      "verified_2026": true
+    },
+    "last_verified": "2026-07-08",
+    "status": "active",
+    "remarks": "Widely used Chinese evaluation benchmark"
   }
 ]

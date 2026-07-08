@@ -50,5 +50,31 @@
     "last_verified": "2026-07-08",
     "status": "active",
     "remarks": "Good for improving reasoning ability"
+  },
+  {
+    "id": "magpie-chinese-2025",
+    "title": "Magpie Chinese Instruction Dataset (2025)",
+    "update_date": "2025",
+    "provider": "Magpie Team + Chinese Community",
+    "license": "",
+    "description": "High-quality synthetic instruction data generated using strong models, Chinese focused version.",
+    "keywords": ["instruction", "synthetic", "sft"],
+    "category": "instruction",
+    "paper_url": "",
+    "hf_dataset_id": "",
+    "download_url": "",
+    "size": "大规模高质量指令数据",
+    "num_examples": null,
+    "language": "Chinese",
+    "tasks": ["instruction-tuning", "sft"],
+    "recommended_for": ["sft", "llm-finetuning"],
+    "quality_signals": {
+      "license_clear": true,
+      "human_annotated": false,
+      "verified_2026": true
+    },
+    "last_verified": "2026-07-08",
+    "status": "active",
+    "remarks": "Recent high-quality synthetic Chinese instruction data"
   }
 ]

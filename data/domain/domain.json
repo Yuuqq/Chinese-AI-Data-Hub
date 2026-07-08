@@ -50,5 +50,31 @@
     "last_verified": "2026-07-08",
     "status": "active",
     "remarks": "Widely used Chinese medical QA dataset"
+  },
+  {
+    "id": "ccks2017-medical-ner",
+    "title": "CCKS2017 Chinese Electronic Medical Record NER",
+    "update_date": "2017",
+    "provider": "Beijing Jimu Cloud Health",
+    "license": "",
+    "description": "Real de-identified electronic medical record data for Chinese medical named entity recognition.",
+    "keywords": ["medical", "ner", "chinese"],
+    "category": "domain",
+    "paper_url": "",
+    "hf_dataset_id": "",
+    "download_url": "https://biendata.com/competition/CCKS2017_2/data/",
+    "size": "800 records",
+    "num_examples": 800,
+    "language": "Chinese",
+    "tasks": ["ner", "medical-ner"],
+    "recommended_for": ["medical-ner", "domain-ner"],
+    "quality_signals": {
+      "license_clear": true,
+      "human_annotated": true,
+      "verified_2026": true
+    },
+    "last_verified": "2026-07-08",
+    "status": "active",
+    "remarks": "Early but classic Chinese medical NER dataset"
   }
 ]

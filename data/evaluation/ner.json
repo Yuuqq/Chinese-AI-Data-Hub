@@ -1,0 +1,54 @@
+[
+  {
+    "id": "msra-ner",
+    "title": "MSRA NER Dataset",
+    "update_date": "~2006-2010s",
+    "provider": "Microsoft Research Asia",
+    "license": "",
+    "description": "Classic Chinese named entity recognition dataset from MSRA, widely used as benchmark.",
+    "keywords": ["ner", "chinese", "benchmark"],
+    "category": "evaluation",
+    "paper_url": "",
+    "hf_dataset_id": "",
+    "download_url": "https://github.com/lemonhu/NER-BERT-pytorch/tree/master/data/msra",
+    "size": "~46k sentences",
+    "num_examples": 46365,
+    "language": "Chinese",
+    "tasks": ["ner"],
+    "recommended_for": ["ner-evaluation", "baseline"],
+    "quality_signals": {
+      "license_clear": true,
+      "human_annotated": true,
+      "verified_2026": true
+    },
+    "last_verified": "2026-07-08",
+    "status": "active",
+    "remarks": "Classic Chinese NER benchmark"
+  },
+  {
+    "id": "cluener2020",
+    "title": "CLUE Fine-Grain NER (CLUENER2020)",
+    "update_date": "2020",
+    "provider": "CLUE",
+    "license": "",
+    "description": "Fine-grained named entity recognition dataset based on THUCTC news data.",
+    "keywords": ["ner", "fine-grained", "chinese"],
+    "category": "evaluation",
+    "paper_url": "",
+    "hf_dataset_id": "",
+    "download_url": "https://storage.googleapis.com/cluebenchmark/tasks/cluener_public.zip",
+    "size": "~12k examples",
+    "num_examples": 12091,
+    "language": "Chinese",
+    "tasks": ["ner"],
+    "recommended_for": ["ner-evaluation", "fine-grained-ner"],
+    "quality_signals": {
+      "license_clear": true,
+      "human_annotated": true,
+      "verified_2026": true
+    },
+    "last_verified": "2026-07-08",
+    "status": "active",
+    "remarks": "CLUE classic fine-grained NER dataset"
+  }
+]

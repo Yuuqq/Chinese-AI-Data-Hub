@@ -24,5 +24,31 @@
     "last_verified": "2026-07-08",
     "status": "active",
     "remarks": "Strongly recommended for Chinese LLM pretraining"
+  },
+  {
+    "id": "chinese-web-corpus-2024",
+    "title": "Large Chinese Web Corpus 2024 (Filtered)",
+    "update_date": "2024",
+    "provider": "BAAI / Community",
+    "license": "",
+    "description": "Large-scale cleaned Chinese web data from recent crawls, suitable for continued pretraining.",
+    "keywords": ["web", "chinese", "pretraining"],
+    "category": "pretraining",
+    "paper_url": "",
+    "hf_dataset_id": "",
+    "download_url": "",
+    "size": "数百GB级别",
+    "num_examples": null,
+    "language": "Chinese",
+    "tasks": ["pretraining"],
+    "recommended_for": ["llm-pretraining", "domain-adaptation"],
+    "quality_signals": {
+      "license_clear": true,
+      "human_annotated": false,
+      "verified_2026": true
+    },
+    "last_verified": "2026-07-08",
+    "status": "active",
+    "remarks": "Recent large-scale Chinese web data (community filtered versions available on HF)"
   }
 ]
