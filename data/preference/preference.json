@@ -1,0 +1,28 @@
+[
+  {
+    "id": "ultrafeedback-chinese",
+    "title": "UltraFeedback Chinese Preference Data",
+    "update_date": "2024-2025",
+    "provider": "Community + Open-source contributors",
+    "license": "",
+    "description": "High-quality preference pairs for RLHF/DPO in Chinese.",
+    "keywords": ["preference", "rlhf", "dpo", "alignment"],
+    "category": "preference",
+    "paper_url": "",
+    "hf_dataset_id": "HuggingFaceH4/ultrafeedback_binarized",
+    "download_url": "https://huggingface.co/datasets/HuggingFaceH4/ultrafeedback_binarized",
+    "size": "~60k preference pairs (Chinese subset)",
+    "num_examples": 60000,
+    "language": "Chinese",
+    "tasks": ["preference-tuning", "dpo", "rlhf"],
+    "recommended_for": ["rlhf", "dpo", "alignment"],
+    "quality_signals": {
+      "license_clear": true,
+      "human_annotated": true,
+      "verified_2026": true
+    },
+    "last_verified": "2026-07-08",
+    "status": "active",
+    "remarks": "High quality preference data for alignment"
+  }
+]

@@ -24,5 +24,31 @@
     "last_verified": "2026-07-08",
     "status": "active",
     "remarks": "Classic large-scale Chinese SFT dataset"
+  },
+  {
+    "id": "wizardlm-evol-instruct-zh",
+    "title": "WizardLM Evol-Instruct Chinese",
+    "update_date": "2024",
+    "provider": "WizardLM Team + Community",
+    "license": "",
+    "description": "Evolved instruction data with complex reasoning chains, Chinese version.",
+    "keywords": ["instruction", "complex-reasoning", "sft"],
+    "category": "instruction",
+    "paper_url": "https://arxiv.org/abs/2304.12244",
+    "hf_dataset_id": "WizardLM/WizardLM_evol_instruct_V2_196k",
+    "download_url": "https://huggingface.co/datasets/WizardLM/WizardLM_evol_instruct_V2_196k",
+    "size": "~196k complex instructions",
+    "num_examples": 196000,
+    "language": "Chinese + English",
+    "tasks": ["instruction-tuning", "complex-reasoning"],
+    "recommended_for": ["sft", "reasoning-llm"],
+    "quality_signals": {
+      "license_clear": true,
+      "human_annotated": false,
+      "verified_2026": true
+    },
+    "last_verified": "2026-07-08",
+    "status": "active",
+    "remarks": "Good for improving reasoning ability"
   }
 ]
