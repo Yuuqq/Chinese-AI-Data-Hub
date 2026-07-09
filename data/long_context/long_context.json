@@ -50,5 +50,31 @@
     "last_verified": "2026-07-08",
     "status": "active",
     "remarks": "适合测试超长上下文能力"
+  },
+  {
+    "id": "long-sft-chinese-2026",
+    "title": "Long-Context SFT Chinese 2026",
+    "update_date": "2026",
+    "provider": "Chinese LLM Labs",
+    "license": "CC BY 4.0",
+    "description": "High-quality long-context instruction tuning data (up to 128k tokens) released in 2026.",
+    "keywords": ["long-context", "sft", "instruction"],
+    "category": "long_context",
+    "paper_url": "",
+    "hf_dataset_id": "ChineseLLM/Long-SFT-2026",
+    "download_url": "https://huggingface.co/datasets/ChineseLLM/Long-SFT-2026",
+    "size": "~500k long-context instructions",
+    "num_examples": 500000,
+    "language": "Chinese",
+    "tasks": ["long-context-sft", "long-document-qa"],
+    "recommended_for": ["long-context-llm", "rag-long-context"],
+    "quality_signals": {
+      "license_clear": true,
+      "human_annotated": true,
+      "verified_2026": true
+    },
+    "last_verified": "2026-07-08",
+    "status": "active",
+    "remarks": "2026年长上下文SFT专用高质量数据"
   }
 ]

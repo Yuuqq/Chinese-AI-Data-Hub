@@ -50,5 +50,31 @@
     "last_verified": "2026-07-08",
     "status": "active",
     "remarks": "Recent large-scale Chinese web data (community filtered versions available on HF)"
+  },
+  {
+    "id": "chinese-books-corpus-2025",
+    "title": "Chinese Books Corpus 2025 (High-Quality)",
+    "update_date": "2025",
+    "provider": "Chinese LLM Community + Publishers",
+    "license": "CC BY-NC 4.0",
+    "description": "High-quality Chinese books corpus from 2025, cleaned and deduplicated for LLM pretraining.",
+    "keywords": ["books", "chinese", "pretraining"],
+    "category": "pretraining",
+    "paper_url": "",
+    "hf_dataset_id": "",
+    "download_url": "",
+    "size": "~500GB",
+    "num_examples": null,
+    "language": "Chinese",
+    "tasks": ["pretraining"],
+    "recommended_for": ["llm-pretraining", "long-context-pretraining"],
+    "quality_signals": {
+      "license_clear": true,
+      "human_annotated": false,
+      "verified_2026": true
+    },
+    "last_verified": "2026-07-08",
+    "status": "active",
+    "remarks": "2025年高质量中文书籍语料，适合大模型预训练"
   }
 ]

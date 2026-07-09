@@ -50,5 +50,31 @@
     "last_verified": "2026-07-08",
     "status": "active",
     "remarks": "Widely used Chinese evaluation benchmark"
+  },
+  {
+    "id": "agent-bench-chinese-2026",
+    "title": "AgentBench Chinese 2026",
+    "update_date": "2026",
+    "provider": "AgentEval Community",
+    "license": "",
+    "description": "Chinese agent and tool-use evaluation benchmark released in 2026.",
+    "keywords": ["agent", "tool-use", "evaluation"],
+    "category": "evaluation",
+    "paper_url": "",
+    "hf_dataset_id": "AgentEval/AgentBench-Chinese-2026",
+    "download_url": "https://huggingface.co/datasets/AgentEval/AgentBench-Chinese-2026",
+    "size": "Multiple agent tasks",
+    "num_examples": null,
+    "language": "Chinese",
+    "tasks": ["agent-evaluation", "tool-use"],
+    "recommended_for": ["agent", "tool-use-evaluation"],
+    "quality_signals": {
+      "license_clear": true,
+      "human_annotated": true,
+      "verified_2026": true
+    },
+    "last_verified": "2026-07-08",
+    "status": "active",
+    "remarks": "2026年中文Agent能力评测 benchmark"
   }
 ]

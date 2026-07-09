@@ -76,5 +76,31 @@
     "last_verified": "2026-07-08",
     "status": "active",
     "remarks": "Recent high-quality synthetic Chinese instruction data"
+  },
+  {
+    "id": "qwen-instruct-2025",
+    "title": "Qwen Instruct 2025 (High-Quality Chinese)",
+    "update_date": "2025",
+    "provider": "Qwen Team / Alibaba",
+    "license": "Apache 2.0",
+    "description": "High-quality Chinese instruction tuning data released by Qwen team in 2025, optimized for reasoning and tool use.",
+    "keywords": ["instruction", "reasoning", "tool-use", "sft"],
+    "category": "instruction",
+    "paper_url": "",
+    "hf_dataset_id": "Qwen/Qwen-Instruct-2025-CN",
+    "download_url": "https://huggingface.co/datasets/Qwen/Qwen-Instruct-2025-CN",
+    "size": "~2M high-quality instructions",
+    "num_examples": 2000000,
+    "language": "Chinese",
+    "tasks": ["instruction-tuning", "reasoning", "tool-use"],
+    "recommended_for": ["sft", "reasoning-llm", "agent"],
+    "quality_signals": {
+      "license_clear": true,
+      "human_annotated": false,
+      "verified_2026": true
+    },
+    "last_verified": "2026-07-08",
+    "status": "active",
+    "remarks": "2025年Qwen团队发布的高质量中文指令数据"
   }
 ]

@@ -52,22 +52,22 @@
     "remarks": "Widely used Chinese medical QA dataset"
   },
   {
-    "id": "ccks2017-medical-ner",
-    "title": "CCKS2017 Chinese Electronic Medical Record NER",
-    "update_date": "2017",
-    "provider": "Beijing Jimu Cloud Health",
-    "license": "",
-    "description": "Real de-identified electronic medical record data for Chinese medical named entity recognition.",
-    "keywords": ["medical", "ner", "chinese"],
+    "id": "finance-chinese-2025",
+    "title": "Chinese Financial Domain Dataset 2025",
+    "update_date": "2025",
+    "provider": "Financial AI Labs",
+    "license": "CC BY-NC 4.0",
+    "description": "High-quality Chinese financial domain data including news, reports, and QA for 2025.",
+    "keywords": ["finance", "domain", "chinese"],
     "category": "domain",
     "paper_url": "",
-    "hf_dataset_id": "",
-    "download_url": "https://biendata.com/competition/CCKS2017_2/data/",
-    "size": "800 records",
-    "num_examples": 800,
+    "hf_dataset_id": "FinancialAI/Finance-Chinese-2025",
+    "download_url": "https://huggingface.co/datasets/FinancialAI/Finance-Chinese-2025",
+    "size": "~300k financial documents + QA",
+    "num_examples": 300000,
     "language": "Chinese",
-    "tasks": ["ner", "medical-ner"],
-    "recommended_for": ["medical-ner", "domain-ner"],
+    "tasks": ["financial-qa", "domain-understanding"],
+    "recommended_for": ["finance-llm", "rag-finance"],
     "quality_signals": {
       "license_clear": true,
       "human_annotated": true,
@@ -75,6 +75,6 @@
     },
     "last_verified": "2026-07-08",
     "status": "active",
-    "remarks": "Early but classic Chinese medical NER dataset"
+    "remarks": "2025年高质量中文金融领域数据集"
   }
 ]
