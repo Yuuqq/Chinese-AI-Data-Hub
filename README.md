@@ -1,4 +1,4 @@
-# CLUEDatasetSearch · 中文 AI Data Hub
+# Chinese AI Data Hub
 
 > **为 AI / LLM 开发者打造的中文数据枢纽**  
 > 发现、获取、贡献高质量数据集 —— 助力大模型预训练、指令微调、评估与应用
