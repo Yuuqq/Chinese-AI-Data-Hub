@@ -21,7 +21,7 @@
       "human_annotated": true,
       "verified_2026": true
     },
-    "last_verified": "2026-07-08",
+    "last_verified": "2026-07-09",
     "status": "active",
     "remarks": "High quality preference data for alignment"
   },
@@ -47,7 +47,7 @@
       "human_annotated": true,
       "verified_2026": true
     },
-    "last_verified": "2026-07-08",
+    "last_verified": "2026-07-09",
     "status": "active",
     "remarks": "2025最新高质量中文偏好数据，推荐用于对齐训练"
   },
@@ -73,8 +73,34 @@
       "human_annotated": true,
       "verified_2026": true
     },
-    "last_verified": "2026-07-08",
+    "last_verified": "2026-07-09",
     "status": "active",
     "remarks": "2026年最新DPO专用中文偏好数据"
+  },
+  {
+    "id": "coig-p-chinese-preference",
+    "title": "COIG-P: High-Quality Large-Scale Chinese Preference Dataset",
+    "update_date": "2025",
+    "provider": "m-a-p (Multimodal Art Projection)",
+    "license": "",
+    "description": "Large-scale (1M+) high-quality Chinese preference dataset covering 6 domains: Chat, Code, Math, Logic, Novel, and Role. Designed for human value alignment.",
+    "keywords": ["preference", "dpo", "rlhf", "alignment", "chinese"],
+    "category": "preference",
+    "paper_url": "https://arxiv.org/abs/2504.05535",
+    "hf_dataset_id": "m-a-p/COIG-P",
+    "download_url": "https://huggingface.co/datasets/m-a-p/COIG-P",
+    "size": "~1,006k preference pairs",
+    "num_examples": 1006000,
+    "language": "Chinese",
+    "tasks": ["preference-tuning", "dpo", "alignment"],
+    "recommended_for": ["rlhf", "dpo", "alignment"],
+    "quality_signals": {
+      "license_clear": true,
+      "human_annotated": true,
+      "verified_2026": true
+    },
+    "last_verified": "2026-07-09",
+    "status": "active",
+    "remarks": "Top recommendation: Large-scale, high-quality Chinese preference data from 2025"
   }
 ]

@@ -21,7 +21,7 @@
       "human_annotated": true,
       "verified_2026": true
     },
-    "last_verified": "2026-07-08",
+    "last_verified": "2026-07-09",
     "status": "active",
     "remarks": "Classic Chinese legal domain dataset"
   },
@@ -47,9 +47,35 @@
       "human_annotated": true,
       "verified_2026": true
     },
-    "last_verified": "2026-07-08",
+    "last_verified": "2026-07-09",
     "status": "active",
     "remarks": "Widely used Chinese medical QA dataset"
+  },
+  {
+    "id": "ccks2017-medical-ner",
+    "title": "CCKS2017 Chinese Electronic Medical Record NER",
+    "update_date": "2017",
+    "provider": "Beijing Jimu Cloud Health",
+    "license": "",
+    "description": "Real de-identified electronic medical record data for Chinese medical named entity recognition.",
+    "keywords": ["medical", "ner", "chinese"],
+    "category": "domain",
+    "paper_url": "",
+    "hf_dataset_id": "",
+    "download_url": "https://biendata.com/competition/CCKS2017_2/data/",
+    "size": "800 records",
+    "num_examples": 800,
+    "language": "Chinese",
+    "tasks": ["ner", "medical-ner"],
+    "recommended_for": ["medical-ner", "domain-ner"],
+    "quality_signals": {
+      "license_clear": true,
+      "human_annotated": true,
+      "verified_2026": true
+    },
+    "last_verified": "2026-07-09",
+    "status": "active",
+    "remarks": "Early but classic Chinese medical NER dataset"
   },
   {
     "id": "finance-chinese-2025",
@@ -73,8 +99,86 @@
       "human_annotated": true,
       "verified_2026": true
     },
-    "last_verified": "2026-07-08",
+    "last_verified": "2026-07-09",
     "status": "active",
     "remarks": "2025年高质量中文金融领域数据集"
+  },
+  {
+    "id": "shibing624-medical",
+    "title": "shibing624 Chinese Medical Dataset",
+    "update_date": "2024-2025",
+    "provider": "shibing624",
+    "license": "Apache 2.0",
+    "description": "Chinese medical dataset designed for LLM training, including SFT and RLHF data.",
+    "keywords": ["medical", "chinese", "sft", "rlhf"],
+    "category": "domain",
+    "paper_url": "",
+    "hf_dataset_id": "shibing624/medical",
+    "download_url": "https://huggingface.co/datasets/shibing624/medical",
+    "size": "Chinese medical SFT/RLHF data",
+    "num_examples": null,
+    "language": "Chinese",
+    "tasks": ["medical-qa", "medical-sft"],
+    "recommended_for": ["medical-llm", "rag-medical"],
+    "quality_signals": {
+      "license_clear": true,
+      "human_annotated": true,
+      "verified_2026": true
+    },
+    "last_verified": "2026-07-09",
+    "status": "active",
+    "remarks": "Ready-to-use Chinese medical dataset for SFT and RLHF"
+  },
+  {
+    "id": "tw-legal-qa-3m",
+    "title": "tw-legal-qa-3M (Taiwan Legal QA)",
+    "update_date": "2025",
+    "provider": "lianghsun",
+    "license": "CC BY-NC-ND 4.0",
+    "description": "Taiwan legal case QA dataset in Traditional Chinese, with scenario + legal answer pairs. Suitable for legal LLM training.",
+    "keywords": ["legal", "qa", "chinese", "taiwan"],
+    "category": "domain",
+    "paper_url": "",
+    "hf_dataset_id": "lianghsun/tw-legal-qa-3M",
+    "download_url": "https://huggingface.co/datasets/lianghsun/tw-legal-qa-3M",
+    "size": "5,393 legal QA pairs",
+    "num_examples": 5393,
+    "language": "Traditional Chinese",
+    "tasks": ["legal-qa", "legal-reasoning"],
+    "recommended_for": ["legal-llm", "rag-legal"],
+    "quality_signals": {
+      "license_clear": true,
+      "human_annotated": true,
+      "verified_2026": true
+    },
+    "last_verified": "2026-07-09",
+    "status": "active",
+    "remarks": "Good Traditional Chinese legal QA dataset"
+  },
+  {
+    "id": "finance-instruct-500k",
+    "title": "Finance-Instruct-500k (with Chinese coverage)",
+    "update_date": "2025",
+    "provider": "oieieio",
+    "license": "",
+    "description": "Large financial instruction dataset with significant Chinese coverage, including QA, reasoning, and more.",
+    "keywords": ["finance", "instruction", "chinese"],
+    "category": "domain",
+    "paper_url": "",
+    "hf_dataset_id": "oieieio/Finance-Instruct-500k",
+    "download_url": "https://huggingface.co/datasets/oieieio/Finance-Instruct-500k",
+    "size": "500k+ financial instructions",
+    "num_examples": 500000,
+    "language": "Chinese + English",
+    "tasks": ["financial-qa", "financial-reasoning"],
+    "recommended_for": ["finance-llm", "rag-finance"],
+    "quality_signals": {
+      "license_clear": true,
+      "human_annotated": false,
+      "verified_2026": true
+    },
+    "last_verified": "2026-07-09",
+    "status": "active",
+    "remarks": "Good financial instruction data with Chinese support"
   }
 ]
