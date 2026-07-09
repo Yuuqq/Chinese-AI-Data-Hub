@@ -21,7 +21,7 @@
       "human_annotated": true,
       "verified_2026": true
     },
-    "last_verified": "2026-07-08",
+    "last_verified": "2026-07-09",
     "status": "active",
     "remarks": "2025更新版中文长上下文 benchmark 和训练数据"
   },
@@ -47,7 +47,7 @@
       "human_annotated": true,
       "verified_2026": true
     },
-    "last_verified": "2026-07-08",
+    "last_verified": "2026-07-09",
     "status": "active",
     "remarks": "适合测试超长上下文能力"
   },
@@ -73,8 +73,34 @@
       "human_annotated": true,
       "verified_2026": true
     },
-    "last_verified": "2026-07-08",
+    "last_verified": "2026-07-09",
     "status": "active",
     "remarks": "2026年长上下文SFT专用高质量数据"
+  },
+  {
+    "id": "thudm-longbench",
+    "title": "THUDM LongBench (Bilingual Long-Context Benchmark)",
+    "update_date": "2023-2025",
+    "provider": "THUDM (Tsinghua University)",
+    "license": "",
+    "description": "First bilingual (Chinese + English), multi-task benchmark for long-context understanding. Covers QA, summarization, few-shot, code, etc. Average context 5k-15k tokens.",
+    "keywords": ["long-context", "benchmark", "chinese", "english"],
+    "category": "long_context",
+    "paper_url": "https://arxiv.org/abs/2308.14508",
+    "hf_dataset_id": "THUDM/LongBench",
+    "download_url": "https://huggingface.co/datasets/THUDM/LongBench",
+    "size": "4,750 test samples across 21 tasks",
+    "num_examples": 4750,
+    "language": "Chinese + English",
+    "tasks": ["long-context-evaluation", "long-document-qa", "summarization"],
+    "recommended_for": ["long-context-llm", "evaluation", "rag-long-context"],
+    "quality_signals": {
+      "license_clear": true,
+      "human_annotated": true,
+      "verified_2026": true
+    },
+    "last_verified": "2026-07-09",
+    "status": "active",
+    "remarks": "Highly recommended benchmark: Bilingual, rigorous, widely used for long-context evaluation"
   }
 ]

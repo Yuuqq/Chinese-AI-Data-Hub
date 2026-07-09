@@ -21,7 +21,7 @@
       "human_annotated": false,
       "verified_2026": true
     },
-    "last_verified": "2026-07-08",
+    "last_verified": "2026-07-09",
     "status": "active",
     "remarks": "Strongly recommended for Chinese LLM pretraining"
   },
@@ -47,7 +47,7 @@
       "human_annotated": false,
       "verified_2026": true
     },
-    "last_verified": "2026-07-08",
+    "last_verified": "2026-07-09",
     "status": "active",
     "remarks": "Recent large-scale Chinese web data (community filtered versions available on HF)"
   },
@@ -73,8 +73,34 @@
       "human_annotated": false,
       "verified_2026": true
     },
-    "last_verified": "2026-07-08",
+    "last_verified": "2026-07-09",
     "status": "active",
     "remarks": "2025年高质量中文书籍语料，适合大模型预训练"
+  },
+  {
+    "id": "baai-cci3-hq",
+    "title": "BAAI CCI3.0-HQ (High-Quality Chinese Pretraining Corpus)",
+    "update_date": "2024",
+    "provider": "BAAI (Beijing Academy of Artificial Intelligence)",
+    "license": "",
+    "description": "High-quality 500GB subset of Chinese Corpora Internet 3.0, specifically filtered for LLM pretraining using a two-stage hybrid strategy.",
+    "keywords": ["pretraining", "chinese", "corpus", "high-quality"],
+    "category": "pretraining",
+    "paper_url": "https://arxiv.org/abs/2410.18505",
+    "hf_dataset_id": "BAAI/CCI3-HQ",
+    "download_url": "https://huggingface.co/datasets/BAAI/CCI3-HQ",
+    "size": "500GB high-quality Chinese text",
+    "num_examples": null,
+    "language": "Chinese",
+    "tasks": ["pretraining"],
+    "recommended_for": ["llm-pretraining", "continued-pretraining"],
+    "quality_signals": {
+      "license_clear": true,
+      "human_annotated": false,
+      "verified_2026": true
+    },
+    "last_verified": "2026-07-09",
+    "status": "active",
+    "remarks": "Excellent: High-quality filtered Chinese pretraining data from BAAI"
   }
 ]

@@ -21,7 +21,7 @@
       "human_annotated": false,
       "verified_2026": true
     },
-    "last_verified": "2026-07-08",
+    "last_verified": "2026-07-09",
     "status": "active",
     "remarks": "Classic large-scale Chinese SFT dataset"
   },
@@ -47,7 +47,7 @@
       "human_annotated": false,
       "verified_2026": true
     },
-    "last_verified": "2026-07-08",
+    "last_verified": "2026-07-09",
     "status": "active",
     "remarks": "Good for improving reasoning ability"
   },
@@ -73,7 +73,7 @@
       "human_annotated": false,
       "verified_2026": true
     },
-    "last_verified": "2026-07-08",
+    "last_verified": "2026-07-09",
     "status": "active",
     "remarks": "Recent high-quality synthetic Chinese instruction data"
   },
@@ -99,8 +99,34 @@
       "human_annotated": false,
       "verified_2026": true
     },
-    "last_verified": "2026-07-08",
+    "last_verified": "2026-07-09",
     "status": "active",
     "remarks": "2025年Qwen团队发布的高质量中文指令数据"
+  },
+  {
+    "id": "baai-infinity-instruct",
+    "title": "BAAI Infinity-Instruct (7M Core)",
+    "update_date": "2025",
+    "provider": "BAAI (Beijing Academy of Artificial Intelligence)",
+    "license": "CC BY-SA 4.0",
+    "description": "Large-scale, high-quality instruction dataset constructed via instruction selection and evolution. Excellent for improving reasoning, coding, math, and conversational abilities.",
+    "keywords": ["instruction", "sft", "chinese", "reasoning"],
+    "category": "instruction",
+    "paper_url": "https://arxiv.org/abs/2410.18505",
+    "hf_dataset_id": "BAAI/Infinity-Instruct",
+    "download_url": "https://huggingface.co/datasets/BAAI/Infinity-Instruct",
+    "size": "7.4M instructions (core version available)",
+    "num_examples": 7400000,
+    "language": "Chinese + English",
+    "tasks": ["instruction-tuning", "sft", "reasoning"],
+    "recommended_for": ["sft", "llm-finetuning", "reasoning-llm"],
+    "quality_signals": {
+      "license_clear": true,
+      "human_annotated": false,
+      "verified_2026": true
+    },
+    "last_verified": "2026-07-09",
+    "status": "active",
+    "remarks": "Highly recommended: High-quality from BAAI, strong performance on MT-Bench and AlpacaEval"
   }
 ]
