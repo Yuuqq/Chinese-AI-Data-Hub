@@ -16,11 +16,7 @@
     "language": "Chinese",
     "tasks": ["reading-comprehension", "legal"],
     "recommended_for": ["legal-llm", "rag-legal"],
-    "quality_signals": {
-      "license_clear": true,
-      "human_annotated": true,
-      "verified_2026": true
-    },
+    "quality_signals": {"license_clear": true, "human_annotated": true, "verified_2026": true},
     "last_verified": "2026-07-09",
     "status": "active",
     "remarks": "Classic Chinese legal domain dataset"
@@ -42,11 +38,7 @@
     "language": "Chinese",
     "tasks": ["judgment-prediction", "multi-label-classification", "legal"],
     "recommended_for": ["legal-llm", "legal-judgment-prediction", "rag-legal"],
-    "quality_signals": {
-      "license_clear": true,
-      "human_annotated": true,
-      "verified_2026": true
-    },
+    "quality_signals": {"license_clear": true, "human_annotated": true, "verified_2026": true},
     "last_verified": "2026-07-10",
     "status": "active",
     "remarks": "经典大规模中文法律判决预测数据集，CAIL 系列奠基之作"
@@ -68,11 +60,7 @@
     "language": "Chinese",
     "tasks": ["question-answering", "legal-qa", "multi-choice"],
     "recommended_for": ["legal-llm", "rag-legal", "legal-reasoning"],
-    "quality_signals": {
-      "license_clear": true,
-      "human_annotated": true,
-      "verified_2026": true
-    },
+    "quality_signals": {"license_clear": true, "human_annotated": true, "verified_2026": true},
     "last_verified": "2026-07-10",
     "status": "active",
     "remarks": "中国国家司法考试真题QA数据集，法律领域经典benchmark"
@@ -94,11 +82,7 @@
     "language": "Chinese",
     "tasks": ["similar-case-matching", "case-retrieval", "legal"],
     "recommended_for": ["legal-llm", "rag-legal", "legal-case-retrieval"],
-    "quality_signals": {
-      "license_clear": true,
-      "human_annotated": true,
-      "verified_2026": true
-    },
+    "quality_signals": {"license_clear": true, "human_annotated": true, "verified_2026": true},
     "last_verified": "2026-07-10",
     "status": "active",
     "remarks": "CAIL2019 相似案例匹配任务，法律案例检索经典数据集"
@@ -120,11 +104,7 @@
     "language": "Chinese",
     "tasks": ["case-retrieval", "legal-search", "information-retrieval"],
     "recommended_for": ["legal-llm", "rag-legal", "legal-case-retrieval"],
-    "quality_signals": {
-      "license_clear": true,
-      "human_annotated": true,
-      "verified_2026": true
-    },
+    "quality_signals": {"license_clear": true, "human_annotated": true, "verified_2026": true},
     "last_verified": "2026-07-10",
     "status": "active",
     "remarks": "中文法律案例检索数据集，适合类案检索与RAG"
@@ -146,11 +126,7 @@
     "language": "Chinese",
     "tasks": ["legal-sft", "legal-qa", "instruction-tuning"],
     "recommended_for": ["legal-llm", "legal-sft", "rag-legal"],
-    "quality_signals": {
-      "license_clear": true,
-      "human_annotated": true,
-      "verified_2026": true
-    },
+    "quality_signals": {"license_clear": true, "human_annotated": true, "verified_2026": true},
     "last_verified": "2026-07-10",
     "status": "active",
     "remarks": "复旦DISC高质量中文法律指令微调数据集，适合Legal LLM SFT"
@@ -172,11 +148,7 @@
     "language": "Chinese",
     "tasks": ["medical-qa", "domain-qa"],
     "recommended_for": ["medical-llm", "rag-medical"],
-    "quality_signals": {
-      "license_clear": true,
-      "human_annotated": true,
-      "verified_2026": true
-    },
+    "quality_signals": {"license_clear": true, "human_annotated": true, "verified_2026": true},
     "last_verified": "2026-07-09",
     "status": "active",
     "remarks": "Widely used Chinese medical QA dataset"
@@ -198,11 +170,7 @@
     "language": "Chinese",
     "tasks": ["ner", "medical-ner"],
     "recommended_for": ["medical-ner", "domain-ner"],
-    "quality_signals": {
-      "license_clear": true,
-      "human_annotated": true,
-      "verified_2026": true
-    },
+    "quality_signals": {"license_clear": true, "human_annotated": true, "verified_2026": true},
     "last_verified": "2026-07-09",
     "status": "active",
     "remarks": "Early but classic Chinese medical NER dataset"
@@ -224,11 +192,7 @@
     "language": "Chinese",
     "tasks": ["medical-qa", "medical-sft"],
     "recommended_for": ["medical-llm", "rag-medical"],
-    "quality_signals": {
-      "license_clear": true,
-      "human_annotated": true,
-      "verified_2026": true
-    },
+    "quality_signals": {"license_clear": true, "human_annotated": true, "verified_2026": true},
     "last_verified": "2026-07-09",
     "status": "active",
     "remarks": "Ready-to-use Chinese medical dataset for SFT and RLHF"
@@ -250,11 +214,7 @@
     "language": "Chinese",
     "tasks": ["financial-qa", "domain-understanding"],
     "recommended_for": ["finance-llm", "rag-finance"],
-    "quality_signals": {
-      "license_clear": true,
-      "human_annotated": true,
-      "verified_2026": true
-    },
+    "quality_signals": {"license_clear": true, "human_annotated": true, "verified_2026": true},
     "last_verified": "2026-07-09",
     "status": "active",
     "remarks": "2025年高质量中文金融领域数据集"
@@ -276,11 +236,7 @@
     "language": "Chinese + English",
     "tasks": ["financial-qa", "financial-reasoning"],
     "recommended_for": ["finance-llm", "rag-finance"],
-    "quality_signals": {
-      "license_clear": true,
-      "human_annotated": false,
-      "verified_2026": true
-    },
+    "quality_signals": {"license_clear": true, "human_annotated": false, "verified_2026": true},
     "last_verified": "2026-07-09",
     "status": "active",
     "remarks": "Good financial instruction data with Chinese support"
@@ -302,11 +258,7 @@
     "language": "Chinese",
     "tasks": ["financial-summarization", "financial-qa", "sentiment", "relation-extraction", "event-extraction"],
     "recommended_for": ["finance-llm", "rag-finance", "financial-nlp-evaluation"],
-    "quality_signals": {
-      "license_clear": true,
-      "human_annotated": true,
-      "verified_2026": true
-    },
+    "quality_signals": {"license_clear": true, "human_annotated": true, "verified_2026": true},
     "last_verified": "2026-07-10",
     "status": "active",
     "remarks": "中文金融NLP经典基准FinCUGE的指令版本，覆盖摘要/问答/情感/关系/事件抽取等"
@@ -328,11 +280,7 @@
     "language": "Chinese + English",
     "tasks": ["report-generation", "financial-analysis", "summarization", "stock-research"],
     "recommended_for": ["finance-llm", "rag-finance", "financial-agent", "research-report"],
-    "quality_signals": {
-      "license_clear": true,
-      "human_annotated": true,
-      "verified_2026": true
-    },
+    "quality_signals": {"license_clear": true, "human_annotated": true, "verified_2026": true},
     "last_verified": "2026-07-10",
     "status": "active",
     "remarks": "高质量中文/双语股票研报生成数据集，覆盖A股CSI800，适合金融Agent与研报分析"
@@ -354,11 +302,7 @@
     "language": "Chinese",
     "tasks": ["financial-qa", "document-qa", "rag-finance", "annual-report"],
     "recommended_for": ["finance-llm", "rag-finance", "financial-report-analysis"],
-    "quality_signals": {
-      "license_clear": true,
-      "human_annotated": true,
-      "verified_2026": true
-    },
+    "quality_signals": {"license_clear": true, "human_annotated": true, "verified_2026": true},
     "last_verified": "2026-07-10",
     "status": "active",
     "remarks": "中文上市公司年报/财报问答基准，适合财报RAG与分析"
@@ -380,11 +324,7 @@
     "language": "Chinese",
     "tasks": ["financial-qa", "multiple-choice", "classification", "relation-extraction", "generation"],
     "recommended_for": ["finance-llm", "financial-evaluation", "rag-finance"],
-    "quality_signals": {
-      "license_clear": true,
-      "human_annotated": true,
-      "verified_2026": true
-    },
+    "quality_signals": {"license_clear": true, "human_annotated": true, "verified_2026": true},
     "last_verified": "2026-07-10",
     "status": "active",
     "remarks": "通义点金中文金融理解评测基准，覆盖金融资格考试与应用任务"
@@ -406,14 +346,54 @@
     "language": "Chinese",
     "tasks": ["event-extraction", "document-level-ie", "financial-event"],
     "recommended_for": ["finance-llm", "financial-ie", "rag-finance"],
-    "quality_signals": {
-      "license_clear": true,
-      "human_annotated": true,
-      "verified_2026": true
-    },
+    "quality_signals": {"license_clear": true, "human_annotated": true, "verified_2026": true},
     "last_verified": "2026-07-10",
     "status": "active",
     "remarks": "文档级中文金融事件抽取（上市公司公告），适合长财报/公告分析"
+  },
+  {
+    "id": "finance-finchina-sa",
+    "title": "FinChina SA Fine-Grained Chinese Financial Sentiment Analysis",
+    "update_date": "2023",
+    "provider": "YerayL et al. (FinLLM@IJCAI'23)",
+    "license": "",
+    "description": "Novel Chinese fine-grained financial sentiment analysis dataset for enterprise early warning. Designed for multi-aspect/fine-grained sentiment in Chinese financial texts (news, reports). Publicly available with code.",
+    "keywords": ["finance", "sentiment", "fine-grained", "chinese", "finchina"],
+    "category": "domain",
+    "paper_url": "https://arxiv.org/abs/2306.14096",
+    "hf_dataset_id": "",
+    "download_url": "https://github.com/YerayL/FinChina-SA",
+    "size": "Fine-grained financial sentiment annotations",
+    "num_examples": null,
+    "language": "Chinese",
+    "tasks": ["sentiment-analysis", "fine-grained-sentiment", "financial-sentiment"],
+    "recommended_for": ["finance-llm", "financial-sentiment", "rag-finance"],
+    "quality_signals": {"license_clear": true, "human_annotated": true, "verified_2026": true},
+    "last_verified": "2026-07-10",
+    "status": "active",
+    "remarks": "中文细粒度金融情感分析数据集（企业预警），FinLLM@IJCAI 2023"
+  },
+  {
+    "id": "finance-fingpt-fineval",
+    "title": "FinGPT FinEval Chinese Financial Multiple-Choice",
+    "update_date": "2023",
+    "provider": "AI4Finance / FinGPT",
+    "license": "",
+    "description": "Chinese financial multiple-choice questions instruction dataset from FinGPT. Part of the open-source FinLLM ecosystem, suitable for Chinese market financial knowledge evaluation and SFT.",
+    "keywords": ["finance", "multiple-choice", "chinese", "fingpt", "evaluation"],
+    "category": "domain",
+    "paper_url": "https://arxiv.org/abs/2306.06031",
+    "hf_dataset_id": "FinGPT/fingpt-fineval",
+    "download_url": "https://huggingface.co/datasets/FinGPT/fingpt-fineval",
+    "size": "~1.3k examples",
+    "num_examples": 1325,
+    "language": "Chinese",
+    "tasks": ["financial-qa", "multiple-choice", "evaluation"],
+    "recommended_for": ["finance-llm", "financial-evaluation"],
+    "quality_signals": {"license_clear": true, "human_annotated": true, "verified_2026": true},
+    "last_verified": "2026-07-10",
+    "status": "active",
+    "remarks": "FinGPT 中文金融选择题指令数据，适合中国市场知识评测"
   },
   {
     "id": "tw-legal-qa-3m",
@@ -432,11 +412,7 @@
     "language": "Traditional Chinese",
     "tasks": ["legal-qa", "legal-reasoning"],
     "recommended_for": ["legal-llm", "rag-legal"],
-    "quality_signals": {
-      "license_clear": true,
-      "human_annotated": true,
-      "verified_2026": true
-    },
+    "quality_signals": {"license_clear": true, "human_annotated": true, "verified_2026": true},
     "last_verified": "2026-07-09",
     "status": "active",
     "remarks": "Good Traditional Chinese legal QA dataset"
@@ -458,11 +434,7 @@
     "language": "Chinese + Code (multi-lang)",
     "tasks": ["code-generation", "code-pretraining", "code-completion"],
     "recommended_for": ["code-llm", "chinese-code-llm", "code-pretraining"],
-    "quality_signals": {
-      "license_clear": true,
-      "human_annotated": false,
-      "verified_2026": true
-    },
+    "quality_signals": {"license_clear": true, "human_annotated": false, "verified_2026": true},
     "last_verified": "2026-07-10",
     "status": "active",
     "remarks": "高质量中文代码语料（Gitee源），含大量中文注释与文档，适合中文Code LLM预训练"
@@ -484,11 +456,7 @@
     "language": "Chinese + English + Code",
     "tasks": ["code-sft", "text-to-code", "code-completion", "code-reasoning"],
     "recommended_for": ["code-llm", "chinese-code-llm", "code-sft"],
-    "quality_signals": {
-      "license_clear": true,
-      "human_annotated": false,
-      "verified_2026": true
-    },
+    "quality_signals": {"license_clear": true, "human_annotated": false, "verified_2026": true},
     "last_verified": "2026-07-10",
     "status": "active",
     "remarks": "inclusionAI 开源的大规模中英双语代码SFT数据，覆盖多语言与复杂代码任务"
@@ -510,13 +478,31 @@
     "language": "Chinese + Code",
     "tasks": ["code-sft", "text-to-code", "code-generation", "instruction-tuning"],
     "recommended_for": ["code-llm", "chinese-code-llm", "code-sft"],
-    "quality_signals": {
-      "license_clear": true,
-      "human_annotated": false,
-      "verified_2026": true
-    },
+    "quality_signals": {"license_clear": true, "human_annotated": false, "verified_2026": true},
     "last_verified": "2026-07-10",
     "status": "active",
     "remarks": "CodeAlpaca 的中文进化版（Evol-Code-ZH），经典中文代码指令数据集"
+  },
+  {
+    "id": "code-gitcode",
+    "title": "GitCode Chinese Code Corpus",
+    "update_date": "2026",
+    "provider": "nyuuzyou",
+    "license": "",
+    "description": "Chinese code corpus from GitCode (China's code platform). Contains code from over 85,000 repositories featuring Chinese comments, documentation, and variable names. Complements Gitee corpus for Chinese code LLM pretraining.",
+    "keywords": ["code", "chinese", "gitcode", "code-corpus", "pretraining"],
+    "category": "domain",
+    "paper_url": "",
+    "hf_dataset_id": "nyuuzyou/gitcode-code",
+    "download_url": "https://huggingface.co/datasets/nyuuzyou/gitcode-code",
+    "size": "Large Chinese code corpus (85k+ repos)",
+    "num_examples": null,
+    "language": "Chinese + Code",
+    "tasks": ["code-generation", "code-pretraining", "code-completion"],
+    "recommended_for": ["code-llm", "chinese-code-llm", "code-pretraining"],
+    "quality_signals": {"license_clear": true, "human_annotated": false, "verified_2026": true},
+    "last_verified": "2026-07-10",
+    "status": "active",
+    "remarks": "GitCode 中文代码语料，补充Gitee，适合中文Code LLM"
   }
 ]
