@@ -10,7 +10,7 @@ This file is **automatically updated** via GitHub Actions when datasets change.
 
 - **HF Dataset ID** links are preferred for downloading.
 - See individual JSON files in `data/` for full metadata.
-- Last generated: 2026-07-09 13:43 UTC
+- Last generated: 2026-07-10 08:22 UTC
 
 ---
 
@@ -70,10 +70,19 @@ This file is **automatically updated** via GitHub Actions when datasets change.
 
 | Title | HF Dataset ID | Size | Recommended For | Last Verified | Status | Remarks |
 |-------|---------------|------|------------------|---------------|--------|---------|
+| CAIL2018 Chinese Legal Judgment Prediction | [china-ai-law-challenge/cail2018](https://huggingface.co/datasets/china-ai-law-challenge/cail2018) | 2,680,000 examples | legal-llm, legal-judgment-prediction, rag-legal | 2026-07-10 | active | 经典大规模中文法律判决预测数据集，CAIL 系列奠基之作 |
+| CAIL2019-SCM Similar Case Matching | - | 8,964 examples | legal-llm, rag-legal, legal-case-retrieval | 2026-07-10 | active | CAIL2019 相似案例匹配任务，法律案例检索经典数据集 |
 | CCKS2017 Chinese Electronic Medical Record NER | - | 800 examples | medical-ner, domain-ner | 2026-07-09 | active | Early but classic Chinese medical NER dataset |
 | CJRC Chinese Legal Reading Comprehension | - | 50,000 examples | legal-llm, rag-legal | 2026-07-09 | active | Classic Chinese legal domain dataset |
 | Chinese Financial Domain Dataset 2025 | [FinancialAI/Finance-Chinese-2025](https://huggingface.co/datasets/FinancialAI/Finance-Chinese-2025) | 300,000 examples | finance-llm, rag-finance | 2026-07-09 | active | 2025年高质量中文金融领域数据集 |
+| DISC-Law-SFT Chinese Legal Instruction Dataset | [ShengbinYue/DISC-Law-SFT](https://huggingface.co/datasets/ShengbinYue/DISC-Law-SFT) | Large-scale legal SFT (Pair + Triplet QA released) | legal-llm, legal-sft, rag-legal | 2026-07-10 | active | 复旦DISC高质量中文法律指令微调数据集，适合Legal LLM SFT |
+| FinCUGE Chinese Financial NLP Benchmark / Instruction | [Maciel/FinCUGE-Instruction](https://huggingface.co/datasets/Maciel/FinCUGE-Instruction) | 138,304 examples | finance-llm, rag-finance, financial-nlp-evaluation | 2026-07-10 | active | 中文金融NLP经典基准FinCUGE的指令版本，覆盖摘要/问答/情感/关系/事件抽取等 |
+| FinRpt Equity Research Report Generation Dataset | [jinsong8/FinRpt](https://huggingface.co/datasets/jinsong8/FinRpt) | 6,825 examples | finance-llm, rag-finance, financial-agent, research-report | 2026-07-10 | active | 高质量中文/双语股票研报生成数据集，覆盖A股CSI800，适合金融Agent与研报分析 |
 | Finance-Instruct-500k (with Chinese coverage) | [oieieio/Finance-Instruct-500k](https://huggingface.co/datasets/oieieio/Finance-Instruct-500k) | 500,000 examples | finance-llm, rag-finance | 2026-07-09 | active | Good financial instruction data with Chinese support |
+| Gitee Chinese Code Corpus | [nyuuzyou/gitee-code](https://huggingface.co/datasets/nyuuzyou/gitee-code) | 536GB (3M+ repos, 819M+ files) | code-llm, chinese-code-llm, code-pretraining | 2026-07-10 | active | 高质量中文代码语料（Gitee源），含大量中文注释与文档，适合中文Code LLM预训练 |
+| JEC-QA Chinese Judicial Examination QA | [hails/agieval-jec-qa-ca](https://huggingface.co/datasets/hails/agieval-jec-qa-ca) | 26,365 examples | legal-llm, rag-legal, legal-reasoning | 2026-07-10 | active | 中国国家司法考试真题QA数据集，法律领域经典benchmark |
+| LeCaRD Chinese Legal Case Retrieval Dataset | [sentence-transformers/lecard-v2](https://huggingface.co/datasets/sentence-transformers/lecard-v2) | 43,000 examples | legal-llm, rag-legal, legal-case-retrieval | 2026-07-10 | active | 中文法律案例检索数据集，适合类案检索与RAG |
+| Ling-Coder-SFT Chinese+English Code Instruction Dataset | [inclusionAI/Ling-Coder-SFT](https://huggingface.co/datasets/inclusionAI/Ling-Coder-SFT) | 5,000,000 examples | code-llm, chinese-code-llm, code-sft | 2026-07-10 | active | inclusionAI 开源的大规模中英双语代码SFT数据，覆盖多语言与复杂代码任务 |
 | cMedQA Chinese Medical QA | - | 200,000 examples | medical-llm, rag-medical | 2026-07-09 | active | Widely used Chinese medical QA dataset |
 | shibing624 Chinese Medical Dataset | [shibing624/medical](https://huggingface.co/datasets/shibing624/medical) | Chinese medical SFT/RLHF data | medical-llm, rag-medical | 2026-07-09 | active | Ready-to-use Chinese medical dataset for SFT and RLHF |
 | tw-legal-qa-3M (Taiwan Legal QA) | [lianghsun/tw-legal-qa-3M](https://huggingface.co/datasets/lianghsun/tw-legal-qa-3M) | 5,393 examples | legal-llm, rag-legal | 2026-07-09 | active | Good Traditional Chinese legal QA dataset |
@@ -86,4 +95,4 @@ This file is **automatically updated** via GitHub Actions when datasets change.
 - To add a new dataset, add a JSON entry in the appropriate folder and the table will update automatically.
 - For contribution guidelines, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
-> **Last updated**: 2026-07-09
+> **Last updated**: 2026-07-10
