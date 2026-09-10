@@ -7,6 +7,10 @@ on:
       - 'scripts/generate_datasets_md.py'
     branches: [ master, main ]
   workflow_dispatch:   # Allow manual trigger
+  pull_request:
+    paths:
+      - 'data/**'
+      - 'scripts/**'
 
 jobs:
   update-datasets-md:
@@ -26,6 +30,10 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
+
+      - name: Validate JSON datasets
+        run: |
+          python scripts/validate_datasets.py
 
       - name: Generate DATASETS.md
         run: |

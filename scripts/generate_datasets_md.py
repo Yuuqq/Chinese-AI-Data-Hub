@@ -7,9 +7,10 @@ Run this script from the repository root.
 import json
 from pathlib import Path
 from datetime import datetime
+import sys
 
-DATA_DIR = Path("data")
-OUTPUT_FILE = Path("DATASETS.md")
+DATA_DIR = Path(__file__).parent.parent / "data"
+OUTPUT_FILE = Path(__file__).parent.parent / "DATASETS.md"
 
 CATEGORY_ORDER = [
     "pretraining",
@@ -47,8 +48,9 @@ def load_json_files():
                         item["_category"] = category
                         item["_source_file"] = str(json_file.relative_to(DATA_DIR))
                         datasets.append(item)
-            except Exception as e:
-                print(f"Warning: Failed to load {json_file}: {e}")
+            except (json.JSONDecodeError, OSError) as e:
+                print(f"Error: Failed to load {json_file}: {e}")
+                sys.exit(1)
     return datasets
 
 def format_size(item):
