@@ -6,6 +6,7 @@ CLUEDatasetSearch Data Hub - 简单验证脚本
 
 import json
 import os
+import sys
 from pathlib import Path
 
 DATA_DIR = Path(__file__).parent.parent / "data"
@@ -38,7 +39,7 @@ def validate_json_file(filepath):
 
 def main():
     print("=== CLUEDatasetSearch Data Hub 验证 ===\n")
-    json_files = list(DATA_DIR.glob("*.json"))
+    json_files = list(DATA_DIR.rglob("*.json"))
     
     if not json_files:
         print("data/ 目录下没有 JSON 文件")
@@ -54,6 +55,7 @@ def main():
         print("🎉 所有文件验证通过！")
     else:
         print("⚠️  存在问题，请修复后重试。")
+        sys.exit(1)
 
 if __name__ == "__main__":
     main()

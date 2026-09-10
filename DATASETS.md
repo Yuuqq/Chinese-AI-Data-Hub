@@ -10,7 +10,7 @@ This file is **automatically updated** via GitHub Actions when datasets change.
 
 - **HF Dataset ID** links are preferred for downloading.
 - See individual JSON files in `data/` for full metadata.
-- Last generated: 2026-09-07 16:55 UTC
+- Last generated: 2026-09-10 09:23 UTC
 
 ---
 
@@ -102,4 +102,4 @@ This file is **automatically updated** via GitHub Actions when datasets change.
 - To add a new dataset, add a JSON entry in the appropriate folder and the table will update automatically.
 - For contribution guidelines, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
-> **Last updated**: 2026-09-07
+> **Last updated**: 2026-09-10

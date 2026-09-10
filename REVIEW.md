@@ -5,38 +5,44 @@ This review assesses the repository's architecture, security, reliability, testi
 ## 1. Architecture and Code Organization Quality
 
 **MEDIUM: Legacy and Unmigrated Directories**
-- **Issue**: There are several legacy directories (`NER/`, `QA/`, `情感分析/`, etc.) that contain old `README.md` files with raw markdown tables. The repository has clearly transitioned to a JSON-driven architecture under `data/`, but these old directories clutter the root space and create confusion about the single source of truth.
-- **Impact**: Developer confusion, fragmented data management.
-- **Fix Suggestion**: Migrate any missing datasets from these legacy `README.md` files into the structured `data/` JSON format. Then, move these old directories into an `archive/` folder or delete them entirely if they are fully migrated.
+- **Issue**: There are several legacy directories (`NER/`, `QA/`, `情感分析/`, etc.) that contain old `README.md` files with raw markdown tables. The migration to `data/` JSON is *incomplete* (e.g., `NER/README.md` has 9 datasets but `data/tasks/ner.json` has 2).
+- **Impact**: Deleting these too early leads to data loss; keeping them around clutters root space.
+- **Fix Suggestion**: Keep these directories intact until migration is confirmed 100% complete. Do not blindly archive or delete them.
 
-**MEDIUM: Unused Legacy Scripts**
+**LOW: Unused Legacy Scripts**
 - **Issue**: `scripts/file_process.sh`, `scripts/pytmp.py`, and `scripts/t.py` appear to be legacy scripts used for transforming the old markdown files. They are no longer part of the automated pipeline.
 - **Impact**: Clutters the codebase, increases maintenance burden, and causes confusion for new contributors.
-- **Fix Suggestion**: Delete these legacy scripts or move them to an `archive/` directory.
+- **Fix Suggestion**: Delete these legacy scripts.
 
 ## 2. Security Issues
 
-**HIGH: Unquoted Variables in Shell Script**
+**LOW: Unquoted Variables in Shell Script**
 - **File**: `scripts/file_process.sh`
 - **Issue**: The script iterates over files and performs `cd $file` and `if ! test -f $file` without quoting the variables.
-- **Impact**: If any directory or filename contains spaces or special characters, it could lead to shell injection vulnerabilities or unintended behavior (e.g., unintended deletion or traversal).
-- **Fix Suggestion**: Quote the variables: `if ! test -f "$file"` and `cd "$file"`. Note: if this script is legacy, it should be deleted instead.
+- **Impact**: This is dead local code (2020 migration script), not run in CI. This is just a clean-up task, not a real security threat.
+- **Fix Suggestion**: Delete the unused script entirely.
 
 ## 3. Reliability / Error Handling / Edge Cases
 
-**MEDIUM: Broad Exception Catching in JSON Generation/Validation**
-- **File**: `scripts/generate_datasets_md.py` (Line 49) and `scripts/validate_datasets.py` (Line 29)
-- **Issue**: Both scripts use `except Exception as e:` which catches all exceptions, including `KeyboardInterrupt` or `SystemExit` (if not derived from `Exception`, but it's generally bad practice to catch generic `Exception` without re-raising or properly handling specific expected exceptions like `json.JSONDecodeError` or `IOError`).
-- **Impact**: Can hide subtle bugs or make debugging difficult.
-- **Fix Suggestion**: Catch specific exceptions, e.g., `except (json.JSONDecodeError, OSError) as e:`.
+**MEDIUM: Silent Failure on Bad JSON in Generation Script**
+- **File**: `scripts/generate_datasets_md.py` (Lines 48-50)
+- **Issue**: The script uses a broad `except Exception as e:` which only prints a warning if a bad JSON file is found, continuing execution rather than failing.
+- **Impact**: Broken JSON files could be merged without failing generation, leading to missing data in `DATASETS.md`.
+- **Fix Suggestion**: Catch specific exceptions `except (json.JSONDecodeError, OSError) as e:`, log the error, and call `sys.exit(1)`.
 
 ## 4. Test Coverage Gaps and High-risk Untested Paths
 
-**HIGH: CI Pipeline Does Not Run Validation**
+**HIGH: CI Pipeline Missing Triggers and Validation Step**
 - **File**: `.github/workflows/update-datasets-md.yml`
-- **Issue**: The GitHub Actions workflow runs `generate_datasets_md.py` to auto-update `DATASETS.md`, but it *does not* run `validate_datasets.py` first.
-- **Impact**: If a contributor submits an invalid JSON file (e.g., missing required fields like `id` or `title`), `generate_datasets_md.py` might fail or generate a broken markdown file. This introduces a high risk of merging broken data.
-- **Fix Suggestion**: Add a step in the GitHub Actions workflow to run `python scripts/validate_datasets.py` before running `generate_datasets_md.py`. The pipeline should fail and block the PR if validation fails.
+- **Issue**:
+  1. The workflow lacks `pull_request` triggers and only runs on pushes to `master`, so PRs are not verified.
+  2. The workflow does not run `validate_datasets.py` before `generate_datasets_md.py`.
+  3. `validate_datasets.py` scanned the wrong directory (used `glob` instead of `rglob` so it missed subdirectories) and didn't fail with code 1 if errors existed.
+- **Impact**: Contributors could merge invalid JSON without knowing, getting false green checks.
+- **Fix Suggestion**:
+  1. Add `pull_request` trigger to CI.
+  2. Add `python scripts/validate_datasets.py` step to CI.
+  3. Fix `validate_datasets.py` to use `rglob` and `sys.exit(1)` on failure.
 
 **LOW: Lack of Unit Tests for Python Scripts**
 - **Issue**: There are no formal test suites (e.g., `pytest` tests) for `generate_datasets_md.py` or `validate_datasets.py`.
@@ -54,13 +60,13 @@ This review assesses the repository's architecture, security, reliability, testi
 ## 6. Documentation and Developer-Experience Gaps
 
 **LOW: Hardcoded Paths in Scripts**
-- **File**: `scripts/validate_datasets.py`
-- **Issue**: `DATA_DIR = Path(__file__).parent.parent / "data"` is fine, but the script assumes it's run from specific relative locations or uses hardcoded required fields.
-- **Impact**: Minor DX issue if the structure changes.
-- **Fix Suggestion**: Document the exact expected schema for JSON files in `CONTRIBUTING.md`, aligning with `REQUIRED_FIELDS = ["id", "title", "description", "category"]`. Currently, `CONTRIBUTING.md` is robust, but explicit schema documentation would improve the contributor experience.
+- **File**: `scripts/generate_datasets_md.py`
+- **Issue**: It uses `DATA_DIR = Path("data")`, which couples it tightly to the CWD being the repo root.
+- **Impact**: Minor DX issue if run from a different directory.
+- **Fix Suggestion**: Use `DATA_DIR = Path(__file__).parent.parent / "data"` to make it independent of CWD.
 
 ## Summary
 
 The repository looks very solid overall, with a clear transition from markdown tables to structured JSON data which significantly improves maintainability and AI-readability. The core Python scripts (`generate_datasets_md.py`) work well for this new architecture.
 
-The most critical fixes to prioritize are updating the GitHub Actions CI pipeline to run `validate_datasets.py` (to prevent merging invalid JSON files) and cleaning up legacy scripts/folders to reduce confusion.
+The most critical fixes to prioritize are updating the GitHub Actions CI pipeline to run `validate_datasets.py` (to prevent merging invalid JSON files) and cleaning up legacy scripts to reduce confusion. Care must be taken not to delete legacy markdown data before it is fully migrated.
